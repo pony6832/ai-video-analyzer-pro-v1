@@ -1,0 +1,56 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*_TOKEN*
+*token*
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node / frontend
+webapp/node_modules/
+webapp/dist/
+webapp/tsconfig.tsbuildinfo
+node_modules/
+dist/
+build/
+.cache/
+
+# PyInstaller and generated packages
+build-v2/
+dist-v2/
+dist-v2-audio-only/
+dist-v2-audio-only-latest/
+*.spec
+*.exe
+*.zip
+
+# Generated analyzer data
+outputs/cache/*
+!outputs/cache/.gitkeep
+outputs/jobs/*
+!outputs/jobs/.gitkeep
+data/jobs/*
+!data/jobs/.gitkeep
+temp/*
+!temp/.gitkeep
+videos/*
+!videos/.gitkeep
+
+# Logs and local OS/editor files
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
